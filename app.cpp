@@ -7,10 +7,10 @@ const int MAX_SIZE = 100;
 
 int main()
 {
-    Doctor doctors[MAX_SIZE];
-    Nurse nurses[MAX_SIZE];
-    Patient patients[MAX_SIZE];
-    Room rooms[MAX_SIZE];
+    Doctor* doctors = new Doctor[MAX_SIZE];
+    Nurse*  nurses = new Nurse[MAX_SIZE];
+    Patient* patients = new Patient[MAX_SIZE];
+    Room* rooms = new Room[MAX_SIZE];
 
     int doctorCount = 0;
     int nurseCount = 0;
