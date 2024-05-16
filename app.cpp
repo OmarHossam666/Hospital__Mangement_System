@@ -20,12 +20,14 @@ int main()
     int choice;
     while (true)
     {
+        cout << "\tHospital Management System V1.0" << "\n\n";
         cout << "-------- Main Menu --------" << "\n";
         cout << "1. Doctors Data" << "\n";
         cout << "2. Nurses Data" << "\n";
         cout << "3. Patients Data" << "\n";
         cout << "4. Rooms Data" << "\n";
-        cout << "5. Back to main menu" << "\n\n";
+        cout << "5. Back to main menu" << "\n";
+        cout << "6. Exit the program" << "\n\n";
         cout << "Enter your choice: ";
         cin >> choice;
 
@@ -71,8 +73,7 @@ int main()
                     getline(cin, address);
 
                     cout << "Department: ";
-                    cin.ignore();
-                    getline(cin, department);
+                    cin >> department;
 
                     cout << "Rating: ";
                     cin >> rating;
@@ -122,8 +123,7 @@ int main()
                     getline(cin, address);
 
                     cout << "Department: ";
-                    cin.ignore();
-                    getline(cin, department);
+                    cin >> department;
 
                     nurses[nurseCount++] = Nurse(name, phone, address, department);
                 }
@@ -171,8 +171,7 @@ int main()
                     getline(cin, address);
 
                     cout << "Status: ";
-                    cin.ignore();
-                    getline(cin, status);
+                    cin >> status;
 
                     cout << "Room ID: ";
                     cin >> roomID;
@@ -225,10 +224,14 @@ int main()
             cout << "Returning to the main menu..." << "\n";
             continue;
         }
+        case 6:
+        {
+            cout << "Exiting the program now..." << "\n";
+            return 0;
+        }
         default:
             cout << "Invalid choice. Please try again." << "\n";
             break;
+        }
     }
-}
-    return 0;
 }
