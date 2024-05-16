@@ -22,12 +22,12 @@ int main()
     {
         cout << "\tHospital Management System V1.0" << "\n\n";
         cout << "-------- Main Menu --------" << "\n";
-        cout << "1. Doctors Data" << "\n";
-        cout << "2. Nurses Data" << "\n";
-        cout << "3. Patients Data" << "\n";
-        cout << "4. Rooms Data" << "\n";
-        cout << "5. Back to main menu" << "\n";
-        cout << "6. Exit the program" << "\n\n";
+        cout << "1. [D]octors Data" << "\n";
+        cout << "2. [N]urses Data" << "\n";
+        cout << "3. [P]atients Data" << "\n";
+        cout << "4. [R]ooms Data" << "\n";
+        cout << "5. [B]ack to main menu" << "\n";
+        cout << "6. [E]xit the program" << "\n\n";
         cout << "Enter your choice: ";
         cin >> choice;
 
