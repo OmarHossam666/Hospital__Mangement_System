@@ -10,9 +10,7 @@ private:
     int roomID;
 public:
     Patient() = default;
-    Patient(string name, string phone, string address, string status, int roomID)
-        : Person(name, phone, address), status(status), roomID(roomID) {}
-
+    Patient(string name , string phone , string address , string status , int roomID) : Person(name , phone , address) , status(status) , roomID(roomID) {      }
     void display()
     {
         cout << "Name: " << name << "\n";
@@ -21,6 +19,15 @@ public:
         cout << "Status: " << status << "\n";
         cout << "Room ID: " << roomID << "\n";
     }
+    void setStatus(string status)
+    {
+        this-> status = status;
+    }
+    string getStatus()
+    {
+        return status;
+    }
+    ~Patient() = default;
 };
 
 #endif

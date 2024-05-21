@@ -9,8 +9,7 @@ private:
     string department;
 public:
     Nurse() = default;
-    Nurse(string name, string phone, string address, string department)
-        : Person(name, phone, address), department(department){}
+    Nurse(string name , string phone , string address , string department) : Person(name , phone , address) , department(department) {       }
     void display()
     {
         cout << "Name: " << name << "\n";
@@ -18,6 +17,15 @@ public:
         cout << "Address: " << address << "\n";
         cout << "Department: " << department << "\n";
     }
+    void setDepartment(string department)
+    {
+        this-> department = department;
+    }
+    string getDepartment()
+    {
+        return department;
+    }
+    ~Nurse() = default;
 };
 
 #endif
