@@ -50,7 +50,7 @@ This Hospital Management System is a command-line application developed in C++ t
 - **doctor.h**: Defines the Doctor class and its methods.
 - **nurse.h**: Defines the Nurse class and its methods.
 - **patient.h**: Defines the Patient class and its methods.
-- **room.h: Defines the Room class and its methods.
+- **room.h**: Defines the Room class and its methods.
 
 ## License
 This project is licensed under the MIT License.
